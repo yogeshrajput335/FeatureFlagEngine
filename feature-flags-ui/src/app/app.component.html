@@ -1,0 +1,26 @@
+<header>
+  <h1>{{ title }}</h1>
+  <nav>
+    <ul style="list-style: none; padding: 0; display: flex; gap: 1rem;">
+      <li>
+        <button routerLink="/features" routerLinkActive="active" style="background: none; border: none; cursor: pointer;">
+          Feature Flags
+        </button>
+      </li>
+      <li>
+        <button routerLink="/features/new" routerLinkActive="active" style="background: none; border: none; cursor: pointer;">
+          New Feature
+        </button>
+      </li>
+      <li>
+        <button routerLink="/evaluate" routerLinkActive="active" style="background: none; border: none; cursor: pointer;">
+          Evaluate Feature
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main style="margin-top: 1rem;">
+  <router-outlet></router-outlet>
+</main>

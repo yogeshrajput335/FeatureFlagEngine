@@ -1,0 +1,12 @@
+<h2>Evaluate Feature</h2>
+
+<input [(ngModel)]="featureKey" placeholder="Feature key" />
+<input [(ngModel)]="userId" placeholder="User ID" />
+<input [(ngModel)]="groups" placeholder="Groups" />
+<input [(ngModel)]="region" placeholder="Region" />
+
+<button (click)="evaluate()">Evaluate</button>
+
+<div *ngIf="result !== null">
+  {{ result ? 'ENABLED ✅' : 'DISABLED ❌' }}
+</div>

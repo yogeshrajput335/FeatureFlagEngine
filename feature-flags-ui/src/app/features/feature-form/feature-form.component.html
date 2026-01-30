@@ -1,0 +1,7 @@
+<h2>{{ id ? 'Edit' : 'New' }} Feature</h2>
+<form #f="ngForm" (ngSubmit)="save(f)">
+  <input [(ngModel)]="feature.key" name="key" placeholder="Key" required />
+  <input type="checkbox" [(ngModel)]="feature.enabled" name="enabled" /> Enabled
+  <input [(ngModel)]="feature.description" name="description" placeholder="Description" />
+  <button type="submit">{{ id ? 'Update' : 'Create' }}</button>
+</form>

@@ -1,0 +1,24 @@
+header {
+  background-color: #1976d2;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+main {
+  padding: 1rem;
+}

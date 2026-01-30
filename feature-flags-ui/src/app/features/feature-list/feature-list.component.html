@@ -1,0 +1,19 @@
+<h2>Feature Flags</h2>
+<button routerLink="/features/new">New Feature</button>
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Enabled</th>
+    <th>Description</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let f of features">
+    <td>{{ f.key }}</td>
+    <td>{{ f.enabled }}</td>
+    <td>{{ f.description }}</td>
+    <td>
+      <button (click)="edit(f.id!)">Edit</button>
+      <button (click)="delete(f.id!)">Delete</button>
+    </td>
+  </tr>
+</table>
